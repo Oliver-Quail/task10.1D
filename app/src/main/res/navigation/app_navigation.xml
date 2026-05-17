@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/login_fragment"
+    android:id="@+id/app_navigation">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.task6d.Fragments.LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/to_sign_up_fragment"
+            app:destination="@id/sign_up_fragment"
+            app:enterAnim="@anim/slide">
+        </action>
+
+        <action
+            android:id="@+id/to_home_fragment"
+            app:destination="@+id/home_fragment"
+            app:enterAnim="@anim/slide">
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/sign_up_fragment"
+        android:name="com.example.task6d.Fragments.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+
+        <action
+            android:id="@+id/to_interest_fragment"
+            app:destination="@id/interests_fragment"
+            app:enterAnim="@anim/slide">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/interests_fragment"
+        android:name="com.example.task6d.Fragments.InterestsFragment"
+        tools:layout="@layout/fragment_interests">
+        <action
+            android:id="@+id/to_home_fragment"
+            app:destination="@+id/home_fragment"
+            app:enterAnim="@anim/slide">
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.task6d.Fragments.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/start_task"
+            app:destination="@id/task_fragment"
+            app:enterAnim="@anim/slide">
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/task_fragment"
+        android:name="com.example.task6d.Fragments.TaskFragment"
+        tools:layout="@layout/fragment_task">
+
+        <action
+            android:id="@+id/to_result_fragment"
+            app:destination="@+id/result_fragment"
+            app:enterAnim="@anim/slide"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/result_fragment"
+        android:name="com.example.task6d.Fragments.ResultFragment"
+        tools:layout="@layout/fragment_result">
+
+    </fragment>
+
+</navigation>

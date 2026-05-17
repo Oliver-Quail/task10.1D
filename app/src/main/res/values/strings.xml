@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Task 6D</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="interests">
+        <item>Algorithms</item>
+        <item>Data Structures</item>
+        <item>Web Development</item>
+        <item>Testing</item>
+        <item>C# Development</item>
+        <item>C++ Development</item>
+        <item>Game Development</item>
+        <item>Unit Testing</item>
+        <item>Discrete Mathematics</item>
+        <item>Cryptography</item>
+        <item>Networking</item>
+        <item>Ethical Hacking</item>
+    </string-array>
+</resources>
