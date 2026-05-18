@@ -127,7 +127,7 @@ public class UpgradeFragment extends Fragment {
 
 
 
-
+        /// https://developer.android.com/codelabs/pay-android-checkout#0
         ActivityResultLauncher<Task<PaymentData>> paymentDataLauncher =
                 registerForActivityResult(
                         new TaskResultContracts.GetPaymentDataResult(),

@@ -127,7 +127,7 @@ public class ProfileFragment extends Fragment {
                 userOnline.id = user.id;
                 userOnline.setCorrectAnswers(correctQuestionTotal);
                 userOnline.setIncorrectAnswers(inCorrectQuestionsTotal);
-                userOnline.setCorrectAnswers(correctQuestionTotal + inCorrectQuestionsTotal);
+                userOnline.setTotalQuestionsAnswer(correctQuestionTotal + inCorrectQuestionsTotal);
 
 
 
