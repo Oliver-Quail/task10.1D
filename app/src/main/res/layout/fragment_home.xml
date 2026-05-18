@@ -37,7 +37,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:src="@drawable/outline_account_circle_24"/>
+            android:src="@drawable/outline_account_circle_24"
+            android:id="@+id/profile_button"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
@@ -66,5 +67,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/generate_task_button"
         android:text="Generate new Task"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="upgrade"
+        android:id="@+id/upgrade_button"/>
 
 </LinearLayout>

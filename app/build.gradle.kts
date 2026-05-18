@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.task6d"
+    namespace = "com.task6d.task6d"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.task6d"
+        applicationId = "com.task6d"
         minSdk = 35
         targetSdk = 36
         versionCode = 1
@@ -23,10 +23,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(
+                proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
-            )
+                )
         }
     }
     compileOptions {
@@ -41,6 +41,7 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.cardview)
+    implementation(libs.runtime)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -52,4 +53,6 @@ dependencies {
     annotationProcessor("androidx.room:room-compiler:2.8.4")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.android.billingclient:billing:8.3.0")
+    implementation("com.google.guava:guava:31.1-android")
 }

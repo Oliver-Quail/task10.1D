@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/login_fragment"
-        android:name="com.example.task6d.Fragments.LoginFragment"
+        android:name="com.task6d.task6d.Fragments.LoginFragment"
         tools:layout="@layout/fragment_login">
 
         <action
@@ -26,7 +26,7 @@
 
     <fragment
         android:id="@+id/sign_up_fragment"
-        android:name="com.example.task6d.Fragments.SignUpFragment"
+        android:name="com.task6d.task6d.Fragments.SignUpFragment"
         tools:layout="@layout/fragment_sign_up">
 
         <action
@@ -38,7 +38,7 @@
 
     <fragment
         android:id="@+id/interests_fragment"
-        android:name="com.example.task6d.Fragments.InterestsFragment"
+        android:name="com.task6d.task6d.Fragments.InterestsFragment"
         tools:layout="@layout/fragment_interests">
         <action
             android:id="@+id/to_home_fragment"
@@ -50,7 +50,7 @@
 
     <fragment
         android:id="@+id/home_fragment"
-        android:name="com.example.task6d.Fragments.HomeFragment"
+        android:name="com.task6d.task6d.Fragments.HomeFragment"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/start_task"
@@ -63,7 +63,7 @@
 
     <fragment
         android:id="@+id/task_fragment"
-        android:name="com.example.task6d.Fragments.TaskFragment"
+        android:name="com.task6d.task6d.Fragments.TaskFragment"
         tools:layout="@layout/fragment_task">
 
         <action
@@ -75,8 +75,22 @@
 
     <fragment
         android:id="@+id/result_fragment"
-        android:name="com.example.task6d.Fragments.ResultFragment"
+        android:name="com.task6d.task6d.Fragments.ResultFragment"
         tools:layout="@layout/fragment_result">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/upgrade_fragment"
+        android:name="com.task6d.task6d.Fragments.UpgradeFragment"
+        tools:layout="@layout/fragment_upgrade">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.task6d.task6d.Fragments.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
 
     </fragment>
 
