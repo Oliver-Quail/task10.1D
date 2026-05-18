@@ -56,7 +56,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c618d7cd-d65e-407d-a504-bdc3d9bf83c7" name="Changes" comment="Added example paybutton based off google pay examples">
+    <list default="true" id="c618d7cd-d65e-407d-a504-bdc3d9bf83c7" name="Changes" comment="Profile page now works">
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -64,10 +64,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/9.3.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/ProfileFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/ProfileFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Model/UserOnline.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Model/UserOnline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Web/LLMService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Web/LLMService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/DAO/TaskDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/DAO/TaskDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779076374844</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Profile page now works">
+      <option name="closed" value="true" />
+      <created>1779079847329</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1779079847329</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -271,7 +279,8 @@
     <MESSAGE value="Files i forgot to attach" />
     <MESSAGE value="Fixed HistoryFragment" />
     <MESSAGE value="Added example paybutton based off google pay examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added example paybutton based off google pay examples" />
+    <MESSAGE value="Profile page now works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Profile page now works" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">

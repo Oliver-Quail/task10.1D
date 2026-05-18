@@ -36,6 +36,7 @@ public class HomeFragment extends Fragment {
     TextView numberOfTasksText;
     Button generateTaskButton;
     ImageView profileButton;
+    RecyclerView historyRecycler;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -64,6 +65,7 @@ public class HomeFragment extends Fragment {
         numberOfTasksText = view.findViewById(R.id.number_of_tasks_text);
         generateTaskButton = view.findViewById(R.id.generate_task_button);
         profileButton = view.findViewById(R.id.profile_button);
+        historyRecycler = view.findViewById(R.id.history_recycler);
 
         AppDatabase db = Room.databaseBuilder(getActivity().getApplicationContext(), AppDatabase.class, "app-db").allowMainThreadQueries().build();
 
@@ -71,10 +73,16 @@ public class HomeFragment extends Fragment {
 
         ArrayList<Task> tasks = new ArrayList<>(db.taskDAO().getUserTasks(activeUser.id));
 
+        ArrayList<Task> completedTasks = new ArrayList<>(db.taskDAO().getCompletedUserTasks(activeUser.id));
+
         TaskAdapater taskAdapater = new TaskAdapater(requireContext(), tasks);
+
+        TaskAdapater completedTaskAdapter = new TaskAdapater(requireContext(), completedTasks);
+
 
         taskRecycler.setAdapter(taskAdapater);
 
+        historyRecycler.setAdapter(completedTaskAdapter);
 
         nameText.setText(activeUser.getUserName());
 

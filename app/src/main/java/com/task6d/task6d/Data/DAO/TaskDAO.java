@@ -23,8 +23,11 @@ public interface TaskDAO {
     @Query("SELECT * FROM task WHERE taskId = :taskId")
     Task getTaskById(int taskId);
 
-    @Query("SELECT * FROM task WHERE assignedTo = :id")
+    @Query("SELECT * FROM task WHERE assignedTo = :id AND isComplete != true")
     List<Task> getUserTasks(int id);
+
+    @Query("SELECT * FROM task WHERE assignedTo = :id AND isComplete = true")
+    List<Task> getCompletedUserTasks(int id);
 
     @Query("SELECT taskId FROM task WHERE assignedTo = :id")
     List<Integer> getUserTasksId(int id);
