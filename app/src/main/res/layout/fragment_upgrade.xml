@@ -49,11 +49,10 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:text="Improved Quiz Generation"/>
-        <Button
+        <com.google.android.gms.wallet.button.PayButton
+            android:id="@+id/purchase_starter"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Purchase"
-            android:id="@+id/purchase_starter"/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -73,7 +72,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:text="Improved Quiz Generation"/>
-        <Button
+        <com.google.android.gms.wallet.button.PayButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Purchase"
@@ -97,7 +96,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:text="Improved Quiz Generation"/>
-        <Button
+        <com.google.android.gms.wallet.button.PayButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Purchase"

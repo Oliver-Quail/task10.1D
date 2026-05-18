@@ -55,4 +55,5 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.android.billingclient:billing:8.3.0")
     implementation("com.google.guava:guava:31.1-android")
+    implementation("com.google.android.gms:play-services-wallet:19.3.0")
 }
