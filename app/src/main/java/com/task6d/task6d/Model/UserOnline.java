@@ -1,10 +1,18 @@
 package com.task6d.task6d.Model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class UserOnline {
+
+    @SerializedName("id")
     public int id;
+    @SerializedName("userName")
     String userName;
+    @SerializedName("correctAnswers")
     int correctAnswers;
+    @SerializedName("incorrectAnswers")
     int incorrectAnswers;
+    @SerializedName("totalQuestionsAnswer")
     int totalQuestionsAnswer;
 
     public String getUserName() {

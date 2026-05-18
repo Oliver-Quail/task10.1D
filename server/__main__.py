@@ -23,9 +23,10 @@ db.init_app(app)
 
 
 
-class User(Base):
+class User(db.Model):
     __tablename__ = "user"
-    id: Mapped[int] = mapped_column(primary_key=True, init=False)
+    idEntry: Mapped[int] = mapped_column(primary_key=True, init=False)
+    idUser :Mapped[int]
     name: Mapped[str] = mapped_column(unique=True)
     total_questions: Mapped[int]
     correct_questions: Mapped[int]    
@@ -154,24 +155,24 @@ def run_test():
 
 @app.route("/addUserData", methods=['POST'])
 def addUserData():
-    name = request.form.get("name")
-    id = request.form.get("id")
-    correct_questions = request.form.get("correct_questions")
-    incorrect_questions = request.form.get("incorrect_questions")
-    total_questions = request.form.get("total_questions")
+    name = request.form.get("userName")
+    userId = request.form.get("id")
+    print(userId)
+    correct_questions = request.form.get("correctAnswers")
+    incorrect_questions = request.form.get("incorrectAnswers")
+    total_questions = request.form.get("totalQuestionsAnswer")
 
-    user = User(id=id, name=name, correct_questions=correct_questions, incorrect_questions=incorrect_questions, total_questions=total_questions)
+    user = User(name=name, correct_questions=correct_questions, incorrect_questions=incorrect_questions, total_questions=total_questions, idUser=userId)
     db.session.add(user)
     db.session.commit()
 
-    pass
+    return 200
 
 @app.route("/user", methods=['GET'])
 def viewUser():
-    query = request.args.get('id')
-    user = User(name="oliver", total_questions=10, correct_questions=7, incorrect_questions=3)
+    userId = request.args.get('id')
     
-    db.select(User).filter_by(id=id)
+    query = db.select(User).filter_by(idUser=userId)
     user = db.session.execute(query).scalar_one_or_none()
 
     return render_template("user.html", user=user)

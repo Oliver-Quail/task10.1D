@@ -21,9 +21,20 @@ import android.widget.TextView;
 import com.task6d.task6d.Data.AppDatabase;
 import com.task6d.task6d.Data.Entity.Question;
 import com.task6d.task6d.Data.Entity.User;
+import com.task6d.task6d.Model.QuestionRaw;
+import com.task6d.task6d.Model.UserOnline;
 import com.task6d.task6d.R;
+import com.task6d.task6d.Web.LLMService;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.OkHttpClient;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class ProfileFragment extends Fragment {
@@ -105,17 +116,46 @@ public class ProfileFragment extends Fragment {
         shareButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.50.179:5000/")
+                        .addConverterFactory(GsonConverterFactory.create())
+                        .client(new OkHttpClient.Builder().readTimeout(90, TimeUnit.SECONDS).build()).build();
 
-                String url = "http://192.168.50.179:5000/user?id=" + String.valueOf(user.id);
+                LLMService service = retrofit.create(LLMService.class);
 
-                Intent sendIntent = new Intent();
-                sendIntent.setAction(Intent.ACTION_SEND);
+                UserOnline userOnline = new UserOnline();
+                userOnline.setUserName(user.getUserName());
+                userOnline.id = user.id;
+                userOnline.setCorrectAnswers(correctQuestionTotal);
+                userOnline.setIncorrectAnswers(inCorrectQuestionsTotal);
+                userOnline.setCorrectAnswers(correctQuestionTotal + inCorrectQuestionsTotal);
 
-                sendIntent.putExtra(Intent.EXTRA_TEXT, url);
-                sendIntent.setType("text/plain");
 
-                Intent shareIntent = Intent.createChooser(sendIntent, "Share your profile");
-                requireContext().startActivity(shareIntent);
+
+                Call<Void> result = service.addUser(userOnline.getUserName(), userOnline.id, userOnline.getCorrectAnswers(), userOnline.getIncorrectAnswers(), userOnline.getTotalQuestionsAnswer());
+
+                result.enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+                        String url = "http://192.168.50.179:5000/user?id=" + String.valueOf(user.id);
+
+                        Intent sendIntent = new Intent();
+                        sendIntent.setAction(Intent.ACTION_SEND);
+
+                        sendIntent.putExtra(Intent.EXTRA_TEXT, url);
+                        sendIntent.setType("text/plain");
+
+                        Intent shareIntent = Intent.createChooser(sendIntent, "Share your profile");
+                        requireContext().startActivity(shareIntent);
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable t) {
+
+                    }
+                });
+
+
+
 
             }
         });
