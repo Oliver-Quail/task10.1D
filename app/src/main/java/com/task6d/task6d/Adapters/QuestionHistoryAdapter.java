@@ -71,7 +71,7 @@ public class QuestionHistoryAdapter extends RecyclerView.Adapter<QuestionHistory
 
             }
             else {
-                answersRadio.setUserAnswer(true);
+                answersRadio.setUserAnswer(false);
             }
             answersRadio.setAnswerText(answer.getAnswerText());
             answersRadios.add(answersRadio);

@@ -45,6 +45,7 @@ public class TaskAdapater extends RecyclerView.Adapter<TaskAdapater.TaskHolder> 
         holder.taskTitleText.setText(tasks.get(position).getTaskName());
         holder.taskDescriptionText.setText(tasks.get(position).getTaskDescription());
         holder.taskId = tasks.get(position).taskId;
+        holder.isComplete = tasks.get(position).isComplete();
     }
 
     @Override
@@ -58,6 +59,7 @@ public class TaskAdapater extends RecyclerView.Adapter<TaskAdapater.TaskHolder> 
         TextView taskDescriptionText;
         Button startTaskButton;
         int taskId;
+        boolean isComplete;
 
         public TaskHolder(@NonNull View itemView) {
             super(itemView);
@@ -72,7 +74,13 @@ public class TaskAdapater extends RecyclerView.Adapter<TaskAdapater.TaskHolder> 
                     NavController navController = Navigation.findNavController(v);
                     Bundle fragmentBundle = new Bundle();
                     fragmentBundle.putInt("taskId", taskId);
-                    navController.navigate(R.id.start_task, fragmentBundle);
+                    if(isComplete) {
+                        navController.navigate(R.id.history_task, fragmentBundle);
+                    }
+                    else {
+                        navController.navigate(R.id.start_task, fragmentBundle);
+
+                    }
                 }
             });
 

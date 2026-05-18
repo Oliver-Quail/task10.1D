@@ -59,6 +59,13 @@
 
         </action>
 
+        <action
+            android:id="@+id/history_task"
+            app:destination="@id/history_fragment"
+            app:enterAnim="@anim/slide">
+
+        </action>
+
     </fragment>
 
     <fragment
@@ -91,6 +98,13 @@
         android:id="@+id/profile_fragment"
         android:name="com.task6d.task6d.Fragments.ProfileFragment"
         tools:layout="@layout/fragment_profile">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/history_fragment"
+        android:name="com.task6d.task6d.Fragments.HistoryFragment"
+        tools:layout="@layout/fragment_history">
 
     </fragment>
 

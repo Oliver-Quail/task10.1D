@@ -56,66 +56,24 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c618d7cd-d65e-407d-a504-bdc3d9bf83c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Adapters/AnswerHistoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Adapters/QuestionHistoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/HistoryFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/ProfileFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/UpgradeFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Model/AnswerHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/outline_arrow_back_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_upgrade.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/recycler_history_answer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/recycler_question_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/T-6.1D/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/T-6.1D/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/T-6.1D/ReadMeImages/image-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/T-6.1D/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/T-6.1D/pip_install_commands.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/task6d/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/task6d/task6d/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Adapters/AnswerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Adapters/AnswerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Adapters/InterestButtonAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Adapters/InterestButtonAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Adapters/QuestionAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Adapters/QuestionAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Adapters/ResultAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Adapters/ResultAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Adapters/TaskAdapater.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Adapters/TaskAdapater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/BottomSheets/PromptResponseBottomSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/BottomSheets/PromptResponseBottomSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Data/AppDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/AppDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Data/DAO/AnswerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/DAO/AnswerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Data/DAO/InterestDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/DAO/InterestDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Data/DAO/QuestionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/DAO/QuestionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Data/DAO/TaskDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/DAO/TaskDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Data/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Data/DAO/UserInterestDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/DAO/UserInterestDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Data/Entity/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/Entity/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Data/Entity/Interest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/Entity/Interest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Data/Entity/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/Entity/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Data/Entity/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/Entity/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Data/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/Entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Data/Entity/UserInterest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Data/Entity/UserInterest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Fragments/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Fragments/InterestsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/InterestsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Fragments/LoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/LoginFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Fragments/ResultFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/ResultFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Fragments/SignUpFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/SignUpFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Fragments/TaskFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/TaskFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Model/AnswersRadio.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Model/AnswersRadio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Model/LLMResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Model/LLMResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Model/QuestionAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Model/QuestionAnswer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Model/QuestionInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Model/QuestionInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Model/QuestionRaw.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Model/QuestionRaw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Model/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Model/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/task6d/Web/LLMService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Web/LLMService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_result.xml" afterDir="false" />
+    <list default="true" id="c618d7cd-d65e-407d-a504-bdc3d9bf83c7" name="Changes" comment="Files i forgot to attach">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Model/UserOnline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.3.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.3.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.3.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.3.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.3.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.3.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Adapters/QuestionHistoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Adapters/QuestionHistoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Adapters/TaskAdapater.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Adapters/TaskAdapater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/HistoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/task6d/task6d/Fragments/HistoryFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/recycler_history_answer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/recycler_history_answer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/recycler_question_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/recycler_question_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/app_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/app_navigation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/task6d/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/task6d/task6d/ExampleUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +142,7 @@
   "keyToString": {
     "Android App.app.executor": "Run",
     "BundleExportedModule": "Task_6D.app",
+    "PROJECT_TRUSTED_KEY": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -278,7 +237,29 @@
       <option name="presentableId" value="Default" />
       <updated>1779006311206</updated>
     </task>
+    <task id="LOCAL-00001" summary="In progress update">
+      <option name="closed" value="true" />
+      <created>1779072125193</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779072125193</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Files i forgot to attach">
+      <option name="closed" value="true" />
+      <created>1779072139588</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779072139588</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="In progress update" />
+    <MESSAGE value="Files i forgot to attach" />
+    <option name="LAST_COMMIT_MESSAGE" value="Files i forgot to attach" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
